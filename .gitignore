@@ -1,37 +1,106 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+build-assets.json
 
-# dependencies
-/node_modules
-/backend/node_modules
-/frontend/node_modules
-/.wilco-helpers/node_modules
-/tests/e2e/node_modules
-/tests/frontend/node_modules/
-/tests/frontend/test-results/
-/tests/frontend/playwright-report/
-/tests/frontend/playwright/.cache/
-
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/backend/build
-/frontend/build
-
-# misc
+# OS
+# ===========
 .DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# yarn berry
+# ==========================
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Node and related ecosystem
+# ==========================
+.nodemonignore
+.sass-cache/
+node_modules/
+public/lib/
+app/tests/coverage/
+.bower-*/
+.idea/
+coverage/
+npm-debug.log
+
+# MEAN.js app and assets
+# ======================
+public/dist/
+uploads
+modules/users/client/img/profile/uploads
+config/env/local.js
+config/env/local-*.js
+*.pem
+
+# Ignoring MEAN.JS's gh-pages branch for documenation
+_site/
+
+# General
+# =======
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+*.tmp
+*.bak
+*.swo
+*.swp
+launchConfigurations/
+logs/
+build/
+lib-cov
+pids
+results
+config.js
+admins.json
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Sublime editor
+# ==============
+.sublime-project
+*.sublime-project
+*.sublime-workspace
 
-#IDEs
-/.idea/
+# Eclipse project files
+# =====================
+.project
+.settings/
+.*.md.html
+.metadata
+*~.nib
+local.properties
+
+# IntelliJ
+# ========
+*.iml
+
+# Cloud9 IDE
+# =========
+.c9/
+data/
+mongod
+
+# Visual Studio
+# =========
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# E2E Testing 
+# =========
+instrumented/
+cypress/videos
+cypress/screenshots
+
+# nyc test coverage
+# =========
+.nyc_output/
